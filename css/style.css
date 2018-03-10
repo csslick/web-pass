@@ -1,0 +1,148 @@
+*{
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+}
+ul,ol{list-style-type: none;}
+a{
+  text-decoration: none;
+  color: #666;
+}
+.clear{ clear: both;}
+body{
+  color: #666;
+  background: #fff;
+}
+
+header{
+  position: relative;
+  width: 1000px; height: 200px;
+  background: #fff;
+  /* border:1px solid #ccc; */
+  margin: 0 auto;
+}
+header h1{
+  position: absolute;
+  left: 20px; top: 80px;
+  /* border: 1px solid #ccc; */
+}
+
+
+#gnb{
+  position: absolute;
+  right: 20px; top: 80px;
+}
+#gnb > ul > li{
+  position: relative;
+  float: left;
+  /* border: 1px solid red; */
+}
+#gnb > ul > li a{
+  display: block;
+  width: 200px;
+  padding: 10px 0;
+  background: #fff;
+  text-align: center;
+  /* border: 1px solid #ccc; */
+}
+#gnb > ul > li > a:hover{
+  background: #009688;
+  color: #fff;
+}
+#gnb .depth2 > li > a:hover{
+  background: #666;
+  color: #fff;
+}
+
+
+#main_image{
+  width: 1000px;
+  margin: 0 auto;
+}
+.slider{
+  width: 1000px; height: 350px;
+  /* border: 2px solid #ccc; */
+  overflow: hidden;
+}
+.slider > .sliders{
+  width: 3000px; height: 350px;
+}
+.slider > .sliders > img{
+  float: left;
+  display: block;
+}
+
+
+#contents{
+  clear: both;
+  width: 1000px; height: 500px;
+  /* overflow: hidden; */
+  margin: 0 auto;
+  /* border: 1px solid #ccc; */
+}
+#contents #notice{
+  width: 50%; height: 250px;
+  /* border: 1px solid #ccc; */
+  float: left;
+  padding: 20px;
+}
+#notice table{ width: 100%;}
+#notice th,td{ padding: 5px;}
+#notice th:first-child{ width: 75%;}
+#notice th:last-child{ width: 30%;}
+
+
+#contents #banner{
+  width: 50%; height: 250px;
+  /* border: 1px solid #ccc; */
+  float: left;
+  padding: 20px;
+}
+#contents #banner img{ width: 100%;}
+#contents #icons{
+  width: 100%; height: 250px;
+  /* border: 1px solid #ccc; */
+  text-align: center;
+  padding: 20px;
+}
+#contents #icons li{
+  display: inline-block;
+  width: 32%;
+}
+
+footer{
+  width: 1000px;
+  height: 150px;
+  background: #009688;
+  color: #fff;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.popup_bg{
+  display: none;
+  position: fixed;
+  width: 100%; height: 100%;
+  z-index: 9;
+  background: rgba(0,0,0,0.5);
+}
+.popup_bg.on{ display: block;}
+.popup{
+  position: absolute;
+  left: 50%; top: 50%;
+  margin-left: -200px; margin-top: -200px;
+  width: 400px; height: 400px;
+  background: #fff;
+  /* border: 1px solid #ccc; */
+  padding: 20px;
+}
+.popup img{ width: 100%;}
+.popup_footer{
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  text-align: center;
+  padding: 20px;
+}
+.popup_footer button{
+  padding: 10px;
+  background: #009688; color: #fff;
+}
